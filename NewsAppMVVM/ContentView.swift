@@ -9,8 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = SourcesListViewModel()
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List(model.sources) { source in
+                
+                VStack(alignment: .center) {
+                    Text(source.name)
+
+                        
+
+                    Text(source.description)
+                        .foregroundColor(.secondary)
+                        .lineLimit(3)
+                }
+                .navigationBarTitle(Text("Sources"))
+            }
+        }
     }
 }
 
