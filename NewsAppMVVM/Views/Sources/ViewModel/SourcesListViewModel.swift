@@ -6,7 +6,6 @@
 //  Copyright © 2019 Laurynas Letkauskas. All rights reserved.
 //
 
-import UIKit
 import Combine
 
 class SourcesListViewModel: ObservableObject {
@@ -16,11 +15,12 @@ class SourcesListViewModel: ObservableObject {
     }
     
     @Published var sources = [SourcesViewModel]()
-    
+    @Published var loading: Bool = true
     private func fetchSources() {
+        loading = true
         NetworkManager.shared.getSourceData { (sources) in
             self.sources = sources.map(SourcesViewModel.init)
+            self.loading = false
         }
-        asdfasdfsadf
     }
 }
