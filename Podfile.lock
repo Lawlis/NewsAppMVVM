@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - KeychainSwift (18.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - KeychainSwift (~> 18.0)
+  - SwiftyJSON (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: f97fbbbe339107b753f3697ab1011d6a1f2daeb1
+
+COCOAPODS: 1.8.4

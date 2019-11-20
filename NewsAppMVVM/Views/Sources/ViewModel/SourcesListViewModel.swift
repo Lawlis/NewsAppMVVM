@@ -21,5 +21,6 @@ class SourcesListViewModel: ObservableObject {
         NetworkManager.shared.getSourceData { (sources) in
             self.sources = sources.map(SourcesViewModel.init)
         }
+        asdfasdfsadf
     }
 }
